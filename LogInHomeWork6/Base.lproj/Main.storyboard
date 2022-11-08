@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,79 +13,72 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="LogInHomeWork6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryI-Mf-X1k">
-                                <rect key="frame" x="16" y="100" width="288" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="d00-96-MBY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xiq-JD-cc4">
-                                <rect key="frame" x="16" y="174" width="288" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="8Ln-Zn-5w2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZU-PH-Xoi">
-                                <rect key="frame" x="120" y="271" width="80" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="DZh-kc-yB7"/>
-                                    <constraint firstAttribute="height" constant="36" id="xwI-M3-tod"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log In"/>
-                                <connections>
-                                    <action selector="logInTappedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzw-n7-vKA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcD-ao-e5l">
-                                <rect key="frame" x="16" y="332" width="172" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="u6H-Yw-yUe"/>
-                                    <constraint firstAttribute="height" constant="36" id="wFL-DE-dv2"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="wbf-zf-gJC"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?"/>
-                                <connections>
-                                    <action selector="forgotUserTapAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXq-bV-Zfr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPT-Hw-MZE">
-                                <rect key="frame" x="202.5" y="332" width="97.5" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="1Bo-nE-4nx"/>
-                                    <constraint firstAttribute="height" constant="36" id="XFO-G3-QoF"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
-                                <connections>
-                                    <action selector="forgotPasswordTapAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDi-d6-ZZb"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fUp-R5-c2J">
+                                <rect key="frame" x="16" y="63.999999999999986" width="382" height="190.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QwN-qL-wjZ">
+                                        <rect key="frame" x="66" y="0.0" width="250" height="88"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryI-Mf-X1k">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xiq-JD-cc4">
+                                                <rect key="frame" x="0.0" y="54" width="250" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="LlK-Dg-zyb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZU-PH-Xoi">
+                                        <rect key="frame" x="156" y="108" width="70.333333333333314" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log In"/>
+                                        <connections>
+                                            <action selector="logInTappedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzw-n7-vKA"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Y8p-J8-iNZ">
+                                        <rect key="frame" x="53.333333333333343" y="162.33333333333334" width="275.33333333333326" height="28.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcD-ao-e5l">
+                                                <rect key="frame" x="0.0" y="0.0" width="133.66666666666666" height="28.333333333333332"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forgotUserTapAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXq-bV-Zfr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPT-Hw-MZE">
+                                                <rect key="frame" x="141.66666666666669" y="0.0" width="133.66666666666669" height="28.333333333333332"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forgotPasswordTapAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDi-d6-ZZb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cPT-Hw-MZE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lcD-ao-e5l" secondAttribute="trailing" constant="8" symbolic="YES" id="4iX-zv-Sle"/>
-                            <constraint firstItem="Xiq-JD-cc4" firstAttribute="top" secondItem="ryI-Mf-X1k" secondAttribute="bottom" constant="40" id="DoA-tu-i4q"/>
-                            <constraint firstItem="ryI-Mf-X1k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="NGu-9N-qkv"/>
-                            <constraint firstItem="dZU-PH-Xoi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYw-S6-cJu"/>
-                            <constraint firstItem="Xiq-JD-cc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="T4y-P4-1ev"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ryI-Mf-X1k" secondAttribute="trailing" constant="16" id="Thc-OS-Wut"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cPT-Hw-MZE" secondAttribute="trailing" constant="20" id="VjG-xL-5ry"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xiq-JD-cc4" secondAttribute="trailing" constant="16" id="Y8i-5A-UOS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lcD-ao-e5l" secondAttribute="bottom" constant="200" id="dgS-1U-5iV"/>
-                            <constraint firstItem="lcD-ao-e5l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iqW-2O-bfY"/>
-                            <constraint firstItem="dZU-PH-Xoi" firstAttribute="top" secondItem="Xiq-JD-cc4" secondAttribute="bottom" constant="63" id="nxS-vM-1U8"/>
-                            <constraint firstItem="cPT-Hw-MZE" firstAttribute="top" secondItem="lcD-ao-e5l" secondAttribute="top" id="p6i-MC-it0"/>
-                            <constraint firstItem="ryI-Mf-X1k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qKt-T7-OeP"/>
+                            <constraint firstItem="fUp-R5-c2J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Iwv-50-AK1"/>
+                            <constraint firstItem="fUp-R5-c2J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fPz-QK-boe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fUp-R5-c2J" secondAttribute="trailing" constant="16" id="pHO-ct-7mM"/>
                         </constraints>
                     </view>
                     <connections>
@@ -103,11 +96,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="uo5-f4-C1u" customClass="LogOutViewController" customModule="LogInHomeWork6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xnn-vL-dlK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="RP0-c3-f20">
-                                <rect key="frame" x="126" y="128" width="68" height="40"/>
+                                <rect key="frame" x="126" y="172" width="162" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9dq-3G-nCa"/>
                                 </constraints>
@@ -116,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-aH-2xC">
-                                <rect key="frame" x="92" y="221" width="136" height="34.5"/>
+                                <rect key="frame" x="139" y="515" width="136" height="34.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="ErC-V7-xYl"/>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="FX2-FZ-qXb"/>
