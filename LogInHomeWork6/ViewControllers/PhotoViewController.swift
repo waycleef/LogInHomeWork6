@@ -14,7 +14,8 @@ class PhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(named: "Photo.png")
+        imageView.image = UIImage(named: "Image")
+
     }
 
 
